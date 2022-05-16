@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'hyperweb';
+    src: url('../fonts/hyperwebco.eot') format('eot');
+    src: local("?"), url("../fonts/hyperwebco.ttf") format('truetype'),
+    url("../fonts/hyperwebco.woff") format('woff'),
+    url("../fonts/hyperwebco.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
