@@ -12,7 +12,12 @@ class IndexController extends Controller
             $services= Service::all();
             $news= News::all();
             return view('index',['services'=>$services , 'news'=>$news]);
-
+            echo "salam";
+            echo "salam";
+            echo "salam";
+            echo "salam";
+            echo "salam";
+            echo "salam";
     }
     public function displayBlogPage() {
         return view('blog');
