@@ -22,4 +22,7 @@ class IndexController extends Controller
     public function displayBlogPage() {
         return view('blog');
     }
+    public function displayAdminPanel(){
+        return view("admin/index");
+    }
 }

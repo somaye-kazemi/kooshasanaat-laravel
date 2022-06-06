@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'hyperweb';
+    src: url('../fonts/hyperwebco.eot') format('eot');
+    src: local("?"), url("../fonts/hyperwebco.ttf") format('truetype'),
+    url("../fonts/hyperwebco.woff") format('woff'),
+    url("../fonts/hyperwebco.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+}
+body{
+    direction: rtl;
+    font-family: 'hyperweb';
+}
+
+/**************************** admin ******************************************/
+
+.fullscreen{
+    background: #f1f2f7;
+
+}
+/******* sidebar ************/
+.sidebar{
+    background: #484452;
+}
+.sidebar-menu {
+    text-align: start;
+    line-height: 57px;
+}
+.sidebar-menu-titre{
+
+}
+.sidebar-menu-titre h3 {
+    color: #F8F2DA;
+    font-size: 18px;
+    padding: 30px;
+    text-align: center;
+}
+.sidebar-menu-list {
+    padding: 20px 0;
+}
+.sidebar-menu-list ul{
+
+}
+.sidebar-menu-list li{
+    list-style: none;
+}
+.sidebar-menu-list a{
+    color: #F8F2DA;
+    text-decoration: none;
+
+}
+
+
+
+/*********   admin *************/
+.nav-admin {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+.nav-admin-menu-r{
+    float: right;
+}
+.nav-admin-menu-r button{
+    color: #393E46;
+}
+.nav-admin-menu-r a{
+
+}
+.nav-admin-menu-l{
+}
+.nav-admin-menu-l ul {
+    margin-bottom: 8px;
+}
+.nav-admin-menu-l li{
+    list-style: none;
+    float: left;
+
+
+}
+.nav-admin-menu-l i{
+    padding-right: 15px;
+    color: #393E46;
+
+}
+
+/*********  داشبورد  ************/
+.header-admin{
+
+}
+.header-admin-r {
+    float: right;
+    margin: 15px 0;
+}
+.header-admin-r h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/***********   body   *************/
+article {
+}
+.body{
+}
+
+/************  body1 **************/
+.body1{
+
+}
+#top-card{
+    background: #DFBAF7;
+
+}
+.card {
+    padding: 23px;
+    text-align: justify;
+    border-radius: 7px;
+    border: none;
+}
+.card-body1-r{
+
+}
+.card-body1-r h3, .card-title h3 {
+    margin: 11px 0px;
+    font-size: 16px;
+}
+.card-body1-r p {
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 23px;
+}
+.card-body1-r ul{
+    margin: 15px 0;
+}
+.card-body1-r li {
+    list-style: none;
+    font-size: 12px;
+
+}
+.card-body1-r a {
+    /* margin-top: 10px; */
+    background: #1A374D;
+    color: #D8D2CB;
+    padding: 3px 15px;
+    border-radius: 4px;
+}
+.card-body1-l{
+
+}
+.card-body1-l img{
+    width: 100%;
+    margin-top: 55px;
+}
+.card-title{
+
+}
+.card-title a{
+
+}
+.card-title i{
+
+}
+.card-body1{
+
+}
+.card-body1 span{
+
+}
+.card-body1 .progress{
+    margin: 12px 0px;
+}
+.card-body1-d {
+    margin: 23px 0;
+}
+.card-body1-d i{
+
+}
+.card-body1-d span {
+    font-size: 13px;
+}
+
+
+/***********   body2   ************/
+.body2 {
+    margin: 35px 0;
+}
+.card-body2-r{
+
+}
+.card-body2-r h4 {
+    font-size: 14px;
+}
+.card-body2-r h5 {
+    font-weight: 800;
+    margin: 10px 0;
+}
+.card-body2-r p{
+    font-size: 10px;
+
+}
+.card-body2-r span{
+
+}
+.card-body2-l {
+    margin-top: 18px;
+}
+.card-body2-l i {
+    background: #eee;
+    padding: 15px;
+    font-size: 22px;
+}
+
+/*********  body3 **********/
+.card-chart-t {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.p {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 140px;
+}
+
+
+
+
+/*************   body4  **************/
+.body4{
+    margin: 35px 0;
+}
+.card-title-r{
+
+}
+.card-title-r h4 {
+    font-size: 15px;
+}
+.card-title-l {
+    font-size: 12px;
+    border: 1px solid #dfdfdf;
+    border-radius: 9px;
+    padding: 5px;
+}
+.card-title-l i{
+
+}
+.card-title-l span {
+    font-size: 11px;
+}
+.card-table {
+    margin: 20px 0;
+}
+.table{
+
+}
+.card-table thead{
+    font-size: 13px;
+
+}
+.card-table tr{
+
+}
+.card-table th{
+
+}
+.card-table tbody {
+    font-size: 13px;
+}
+.card-table td{
+
+}
+.card-table-b{
+
+}
+
+.card-table-b-r {
+    padding: 8px 25px 8px;
+}
+.card-table-b-r i {
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.card-table-b-l {
+    padding: 7px;
+}
+.card-table-b-l h6 {
+    font-size: 12px;
+    text-align: center;
+}
+.card-table-b-l h5{
+    font-size: 15px;
+    text-align: center;
+
+}
+/**********   body5  **********/
+.card-body5 {
+    line-height: 33px;
+    font-size: 12px;
+}
+.input-card{
+    direction: ltr;
+    margin-top: 18px;
+}
+
+/********************************* store ***********************************/
+.card-store{
+    direction: rtl;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+.file-input-label {
+    padding: 0px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+.input-group-text{
+}
+
+.input-card-img{
+
+}
+body
+{
+    background-color:#f5f5f5;
+}
+.imagePreview {
+    width: 100%;
+    height: 350px;
+    background-position: center center;
+    background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+    background-color:#fff;
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: inline-block;
+    box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+.imgUp
+{
+    margin-bottom:15px;
+}
+textarea.form-control {
+
+    height: 230px;
+}
+/******************   file manager   *******************/
+
+
+
+
+
+
+
+
+
+

@@ -26,14 +26,27 @@ Route::get('/single', function () {
 });
 
 
-Route::prefix("/services")->group(function(){
-    Route::get('/',[ServiceController::class, 'getAllServices']);
-    Route::get('/{id}',[ServiceController::class, 'getService']);
-    Route::post('/',[ServiceController::class, 'createService']);
-    Route::put('/{id}',[ServiceController::class, 'updateServices']);
-    Route::delete('/{id}',[ServiceController::class, 'deleteServices']);
+
+
+
+Route::prefix("/admin")->group(function(){
+    Route::get('/',[IndexController::class, 'displayAdminPanel']);
+    Route::get('/services',[ServiceController::class, 'displayAdminServices']);
+    Route::get('/services/create',[ServiceController::class, 'displayCreateService']);
+    Route::post('/services/create',[ServiceController::class, 'createService']);
+
+
+
+    Route::prefix("/services")->group(function(){
+        Route::get('/',[ServiceController::class, 'displayAllServices']);
+        Route::get('/{id}',[ServiceController::class, 'getService']);
+//        Route::get('/create',[ServiceController::class, 'displayCreateService']);
+
+//        Route::post('/create',[ServiceController::class, 'createService']);
+        Route::put('/{id}',[ServiceController::class, 'updateServices']);
+        Route::delete('/{id}',[ServiceController::class, 'deleteServices']);
+    });
+
 });
-
-
 
 
