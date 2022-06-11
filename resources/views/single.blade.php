@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <!--css-->
-    <link href="/css/app.css" rel="stylesheet">
-    <style>
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+@extends("layouts.master")
 
-    <!--css-->
-</head>
-<body>
+@section("banner")
+    @include("layouts.banner")
+@endsection
 
-@include('layouts.header')
+@section("main")
 
-@include('layouts.banner')
-
-<!--about-->
+@section("main")
+    <!--about-->
 <section class="about">
     <div class="container">
         <div class="row">
@@ -131,14 +117,4 @@
     </div>
 </section>
 <!--our-team-->
-
-
-@include('layouts.footer')
-
-<!-- Optional JavaScript -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-
-</body>
-</html>
+@endsection

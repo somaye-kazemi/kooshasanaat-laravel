@@ -3,7 +3,7 @@
 @extends("layouts.admin.master-admin")
 
 @section("main")
-    <form class="row" method="post" action="/admin/news/creat">
+    <form class="row" method="post" action="/admin/news/create">
         @csrf
         <div class="col-md-6">
             <input type="text" class="form-control  mb-4 mt-4"

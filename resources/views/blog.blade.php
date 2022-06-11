@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <!--css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-
-    <!--css-->
-</head>
-<body>
 
 @extends("layouts.master")
 
@@ -67,11 +47,3 @@
     </div>
 </section>
 @endsection
-
-<!-- Optional JavaScript -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-
-</body>
-</html>

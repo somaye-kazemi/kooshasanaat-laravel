@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <!--css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+@extends("layouts.master")
 
-    <!--css-->
-</head>
-<body>
-@include('layouts.header')
+@section("banner")
+    @include("layouts.banner")
+@endsection
 
-@include('layouts.banner')
+@section("main")
 
 <!--contact-->
 <section class="contact">
@@ -109,14 +93,5 @@
     </div>
 </section>
 <!--form-->
+@endsection
 
-
-@include('layouts.footer')
-
-<!-- Optional JavaScript -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-
-</body>
-</html>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -15,7 +16,7 @@ class ServiceController extends Controller
     public function getService($id){
 
     }
-    public function createService(){
+    public function createService(Request $request){
 //        dd($_POST);
 //        dd($_POST["title"]);
 //        dd(request()->all());
@@ -26,9 +27,15 @@ class ServiceController extends Controller
 //        $service->setDescription(request("description"));
 //
 //        $service->save();
+        $valid_data=$request->validate([
+            "title"=> ["required","max:30"],
+//            'required|max:255',
+            "description"=>["required"],
+        ]);
+
         Service::create([
-            "title"=>request("title"),
-            "description"=>request("description")
+            "title"=>$valid_data["title"],
+            "description"=>$valid_data["description"]
         ]);
         return redirect("/admin/services");
     }
