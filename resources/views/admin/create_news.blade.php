@@ -3,14 +3,15 @@
 @extends("layouts.admin.master-admin")
 
 @section("main")
-    <form class="row">
+    <form class="row" method="post" action="/admin/news/creat">
+        @csrf
         <div class="col-md-6">
             <input type="text" class="form-control  mb-4 mt-4"
-                   placeholder=" تیتر خبر را وارد کنید ">
+                   placeholder=" تیتر خبر را وارد کنید " name="date">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">متن اصلی</label>
                 <textarea class="form-control " id="exampleFormControlTextarea1"
-                          rows="3"></textarea>
+                          rows="3" name="text"></textarea>
 
             </div>
           <div class="form-group">

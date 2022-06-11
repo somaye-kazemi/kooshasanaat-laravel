@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
@@ -35,7 +36,9 @@ Route::prefix("/admin")->group(function(){
     Route::get('/services/create',[ServiceController::class, 'displayCreateService']);
     Route::post('/services/create',[ServiceController::class, 'createService']);
 
-
+    Route::get('/news',[NewsController::class, 'displayAdminNews']);
+    Route::get('/news/create',[NewsController::class, 'displayCreateNews']);
+    Route::post('/news/create',[NewsController::class, 'createNews']);
 
     Route::prefix("/services")->group(function(){
         Route::get('/',[ServiceController::class, 'displayAllServices']);
