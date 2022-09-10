@@ -1,8 +1,8 @@
 @extends("layouts.admin.master-admin")
 
 @section("main")
-    <form class="row" action="/admin/services/create" method="post"
-          enctype="multipart/form-data" xmlns="http://www.w3.org/1999/html">
+    <form class="row" action="/admin/shop/create" method="post"
+          enctype="multipart/form-data">
         @csrf
         <div class="col-md-6">
 
@@ -13,14 +13,15 @@
                     @endforeach
                 </ul>
             @endif
-            <input type="text" class="form-control  mb-4 mt-4"
-                   placeholder=" عنوان سرویس وارد کنید " name="title">
-
+                <label>
+                    <input type="text" class="form-control  mb-4 mt-4">
+                </label>
+                placeholder=" عنوان محصول وارد کنید " name="text">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">توضیحات</label>
 
                 <textarea class="form-control " id="exampleFormControlTextarea1"
-                          rows="3" name="description"></textarea>
+                          rows="3" name="numberBetween"></textarea>
 
             </div>
             <div class="form-group">

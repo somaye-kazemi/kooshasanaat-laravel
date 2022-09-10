@@ -1,6 +1,6 @@
 <!--sidebar-->
 <div class="col-md-4">
-<div class="sidebar">
+<div class="sidebar-blog">
     <div class="row">
         <div class="col-md-12">
             <div class="sidebar-t">
@@ -100,7 +100,7 @@
     </div>
 
 </div>
-<div class="sidebar">
+<div class="sidebar-blog">
     <div class="row">
         <div class="col-md-12">
             <div class="sidebar-t">

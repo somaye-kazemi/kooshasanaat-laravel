@@ -12,7 +12,7 @@
                                         <h4>آخرین درامد ها</h4>
                                     </div>
                                     <div>
-                                        <a class="btn btn-success" href="/admin/services/create">افزودن خدمت</a>
+                                        <a class="btn btn-success" href="/admin/shop/create">افزودن محصول</a>
                                     </div>
                                 </div>
 
@@ -36,23 +36,23 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($services as $index => $service)
-                                <tr>
-                                    <td class="text-right">{{$index+1}}</td>
-                                    <td class="text-center">{{$service->title}}</td>
-                                    <td class="text-center text-success">{{$service->description}}</td>
+                                @foreach($shop as $index => $shop)
+                                    <tr>
+                                        <td class="text-right">{{$index+1}}</td>
+                                        <td class="text-center">{{$shop->text}}</td>
+                                        <td class="text-center text-success">{{$shop->numberBetween}}</td>
 
-                                    <td class="text-center">
-                                        <form class="d-inline-block"  action="/admin/services/{{$service->id}}" method="post">
-                                            @csrf
-                                            @method("DELETE")
-                                            <button class="text-danger border-0 bg-white" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                                        </form>
-                                        <a class="text-primary" href="/admin/services/edit/{{$service->id}}">
-                                            <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
-                                        </a>
-                                    </td>
-                                </tr>
+                                        <td class="text-center">
+                                            <form class="d-inline-block"  action="/admin/services/{{$shop->id}}" method="post">
+                                                @csrf
+                                                @method("DELETE")
+                                                <button class="text-danger border-0 bg-white" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                            </form>
+                                            <a class="text-primary" href="/admin/services/edit/{{$shop->id}}">
+                                                <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
                                 @endforeach
                                 </tbody>
                             </table>

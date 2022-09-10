@@ -34,20 +34,26 @@
     <!-- ./ logo -->
 
     <h5>ساخت اکانت</h5>
+    @if($errors->any())
+        <ul class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
 
+    @endif
     <!-- form -->
-    <form>
+    <form action="/signup" method="post">
+        @csrf
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="نام" required autofocus>
+            <input name="name" type="text" class="form-control" placeholder="نام" required autofocus>
+        </div>
+
+        <div class="form-group">
+            <input name="email" type="text" class="form-control" placeholder="ایمیل " required>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="نام خانوادگی" required>
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="ایمیل " required>
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" placeholder="رمزعبور" required>
+            <input name="password" type="password" class="form-control" placeholder="رمزعبور" required>
         </div>
         <button class="btn btn-primary btn-block">ثبت‌نام</button>
         <hr>

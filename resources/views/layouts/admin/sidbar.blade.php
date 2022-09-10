@@ -11,7 +11,7 @@
                             <li><a href="/admin">صفحه اصلی</a></li>
                             <li><a href="/admin/services"> سرویس ها</a></li>
                             <li><a href="/admin/news">اخبار</a></li>
-                            <li><a href="#">نمایش</a></li>
+                            <li><a href="#">بلاگ</a></li>
                             <li><a href="#">کاربران</a></li>
                             <li><a href="#">ابزار ها</a></li>
                             <li><a href="#">فروشگاه</a></li>

@@ -1,7 +1,7 @@
 @extends("layouts.admin.master-admin")
 
 
-                <!--main-->
+{{--                <!--main-->--}}
 
 {{--                <!--nav-->--}}
 {{--                <nav class="nav-admin">--}}
@@ -418,6 +418,6 @@
 {{--                <!--body-->--}}
 
 
-                <!--main-->
+{{--                <!--main-->--}}
 
 

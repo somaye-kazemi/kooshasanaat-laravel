@@ -11,7 +11,18 @@
                         <i class="fa fa-whatsapp"></i>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-5">
+                <div class="col-md-5 col-lg-5 d-flex">
+                    <div class="register">
+
+                       @guest
+                        <a class="" href="/login">Login</a>
+                        <a class="mr-3" href="/signup">Signup</a>
+                        @endguest
+
+                        @auth
+                        <a class="" href="/logout">Logout</a>
+                        @endauth
+                    </div>
                     <div class="nav-phone">
                         <span>09123817586</span>
                         <i class="fa fa-phone"></i>

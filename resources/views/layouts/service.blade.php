@@ -18,12 +18,12 @@
             <div class="serv-t">
                 <div class="row">
                     <div class="col-md-4 col-lg-4">
-                        @for( $i=0; $i<sizeof($services)/2; $i++)
+                        @for( $i=0; $i<sizeof($services); $i++)
                             <div class="serv-box">
                                 <div class="row">
                                     <div class="col-md-3 ">
                                         <div class="serv-box-img">
-                                            <img src="/images/{{$services[$i]->image}}" alt="" title="">
+                                            <img src="/images/services/{{$services[$i]->image}}" alt="" title="">
                                         </div>
                                     </div>
                                     <div class="col-md-9">

@@ -4,46 +4,30 @@
     @include("layouts.banner")
 @endsection
 
-@section("main")
 
 @section("main")
-    <!--about-->
-    <section class="about">
+    <section class="shop">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="about-titre">
-
-                        <h3>در باره ما بدانید</h3>
+                <div class="col-md-4">
+                    @for($i=0; $i<=3; $i++)
+                    <div class="shop-box">
+                        <div class="shop-img">
+                            <img src="/images/shop/{{$shop[$i]->image}}" alt="" title="">                        </div>
+                        <div class="shop-text">
+                            <p>
+                                {{ $shop[$i]['text']}}
+                            </p>
+                        </div>
+                        <div class="shop-price">
+                            <span>
+                                  {{$shop[$i]['numberBetween']}}
+                            </span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="about-img">
-                        <img src="/images/about-img.jpg" alt="" title="">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="about-text">
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم استلورم ایپسوم متن ساختگی با تولید سادگی
-                            نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                            سطرآنچنان که لازم است
-                        </p>
-                        <p class="main-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                        </p>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
-                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                        </p>
-                    </div>
+                    @endfor
                 </div>
             </div>
         </div>
     </section>
-    <!--about-->
-
 @endsection

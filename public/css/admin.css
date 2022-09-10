@@ -371,9 +371,12 @@ textarea.form-control {
 
 
 
+/*****************   login   ********************/
 
-
-
+.login-form{
+    padding: 30px 60px
+    
+}
 
 
 

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\News;
 use App\Models\Service;
+use App\Models\Shop;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -18,6 +19,7 @@ class DatabaseSeeder extends Seeder
     {
     User::factory(10)->create();
    Service:: factory(6)->create();
+   Shop:: factory(6)->create();
      \App\Models\News::factory(3)->create();
 //      $this.call([
 //         factory(User::class,10),

@@ -884,8 +884,7 @@ ul.tabs li.current{
 .blog {
     margin-top: 50px;
 }
-.sidebar{
-
+.sidebar-blog{
 }
 .sidebar-t{
     border-right: 2px solid #28B78D;
@@ -965,3 +964,33 @@ ul.tabs li.current{
 }
 
 
+/***********    shop.blade.php   ************/
+.shop{
+}
+.shop-box{
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+}
+.shop-img{
+
+}
+.shop-img img{
+    width: 100%;
+}
+.shop-text {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.shop-text p{
+
+}
+.shop-price{
+
+}
+.shop-price span{
+    font-size: 18px;
+    font-weight: bold;
+}

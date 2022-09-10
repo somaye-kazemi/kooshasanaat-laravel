@@ -34,14 +34,22 @@
     <!-- ./ logo -->
 
     <h5>ورود</h5>
+    @if($errors->any())
+        <ul class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
 
+@endif
     <!-- form -->
-    <form>
+    <form action="/login" method="post">
+        @csrf
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="نام کاربری یا ایمیل" required autofocus>
+            <input name="email" type="text" class="form-control" placeholder="نام کاربری یا ایمیل" required autofocus>
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" placeholder="رمزعبور" required>
+            <input name="password" type="password" class="form-control" placeholder="رمزعبور" required>
         </div>
         <div class="form-group d-flex justify-content-between">
             <div class="custom-control custom-checkbox">
@@ -92,7 +100,7 @@
         </ul>
         <hr>
         <p class="text-muted">اکانت ندارید?</p>
-        <a href="register.html" class="btn btn-outline-light btn-sm">ثبت نام کنید!</a>
+        <a href="signup.blade.php" class="btn btn-outline-light btn-sm">ثبت نام کنید!</a>
     </form>
     <!-- ./ form -->
 

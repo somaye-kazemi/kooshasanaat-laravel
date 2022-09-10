@@ -1,136 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>addblog admin</title>
-    <!--css-->
-    <link href="../../../public/admin_/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../public/admin_/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../public/admin_/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../../public/admin_/css/owl.theme.default.min.css">
-    <link href="../../../public/admin_/css/style.css" rel="stylesheet">
-    <style>
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-
-    <!--css-->
-
-</head>
-<body>
-
-<section class="fullscreen">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <!--sidebar-->
-                <div class="sidebar">
+@extends("layouts.admin.master-admin")
+@section("main")
+                <section class="body">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="sidebar-menu">
-                                    <div class="sidebar-menu-titre">
-                                        <h3>کوشا صنعت صحرا</h3>
-                                    </div>
-                                    <div class="sidebar-menu-list">
-                                        <ul>
-                                            <li><a href="#">صفحه اصلی</a></li>
-                                            <li><a href="#">نوشته ها</a></li>
-                                            <li><a href="#">برگه ها</a></li>
-                                            <li><a href="#">نمایش</a></li>
-                                            <li><a href="#">کاربران</a></li>
-                                            <li><a href="#">ابزار ها</a></li>
-                                            <li><a href="#">فروشگاه</a></li>
-                                            <li><a href="#">مشاهده سفارش ها</a></li>
-                                            <li><a href="#">وارد کردن محصول جدید</a></li>
-                                            <li><a href="#">تنظیمات</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--sidebar-->
-            </div>
-            <div class="col-md-9">
-
-                <!--main-->
-
-                <!--nav-->
-                <nav class="nav-admin">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="nav-admin-menu-r">
-                                    <!-- Example single danger button -->
-                                    <div class="btn-group">
-                                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown"
-                                                aria-expanded="false">
-                                            Action
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="btn-group">
-                                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown"
-                                                aria-expanded="false">
-                                            Action
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="nav-admin-menu-l">
-                                    <ul>
-                                        <li><i class="fa fa-cog"></i></li>
-                                        <li><i class="fa fa-bell-o"></i></li>
-                                        <li><i class="fa fa-comment-o"></i></li>
-                                        <li><i class="fa fa-home"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <!--nav-->
-
-                <!--header-->
-                <div class="header-admin">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="header-admin-r">
-                                    <h2>داشبورد</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--header-->
-
-                <!--body-->
-                <!--body-->
-                <article class="body">
-                    <div class="container-fluid">
-                        <div class="row">
+                        <d iv class="row">
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-title d-flex justify-content-between">
@@ -150,10 +22,12 @@
                                         </div>
                                     </div>
                                     <div class="card-store">
-                                        <div class="row">
+                                        <form class="row">
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control  mb-4 mt-4"
-                                                       placeholder=" عنوان خود را وارد کنید ">
+                                                <label>
+                                                    <input type="text" class="form-control  mb-4 mt-4"
+                                                           placeholder=" عنوان خود را وارد کنید ">
+                                                </label>
                                                 <div class="form-group">
                                                     <label for="exampleFormControlTextarea1">متن اصلی</label>
                                                     <textarea class="form-control " id="exampleFormControlTextarea1"
@@ -192,31 +66,11 @@
 
                                                 </div>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </article>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!--body-->
-
-    </div>
-    </div>
-    </div>
-</section>
-
-<!-- Optional JavaScript -->
-<script src="../../../public/admin_/js/jquery-2.1.4.min.js"></script>
-<script src="../../../public/admin_/js/bootstrap.min.js"></script>
-<script src="../../../public/admin_/js/owl.carousel.min.js"></script>
-<script src="../../../public/admin_/css/bootstrap.bundle.min.js"></script>
-<script src="../../../public/admin_/js/script.js"></script>
-
-
-</body>
-</html>
+                </section>
+@endsection

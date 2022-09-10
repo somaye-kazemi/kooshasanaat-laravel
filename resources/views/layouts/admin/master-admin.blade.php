@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>panel admin</title>
     <!--css-->
-    <link href="../../css/app.css" rel="stylesheet">
+    <link href={{asset("css/app.css")}} rel="stylesheet">
 
     <style>
         .carousel-inner img {
